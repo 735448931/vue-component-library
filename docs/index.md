@@ -3,8 +3,8 @@
 layout: home
 
 hero:
-  name: "component-library"
-  text: "Library"
+  name: "A Vue3 Component Library"
+  text: "A VitePress Site"
   tagline: My great project tagline
   actions:
     - theme: brand
