@@ -1,0 +1,53 @@
+$primary:#409eff;
+$success:#67c23a;
+$warning:#e6a23c;
+$error:#f56c6c;
+
+$button-type:(
+  primary: $primary,  
+  success: $success,  
+  warning: $warning,  
+  error: $error
+);
+
+@each $type, $color in $button-type {  
+  .x-button--#{$type} {  
+   background-color: $color;
+   color:#303133;
+  }  
+}
+
+
+.x-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1;
+  text-align: center;
+  height: 32px;
+  white-space: nowrap;
+  cursor: pointer;
+  // 文本不会被用户选中
+  user-select: none;
+  border: none;
+  vertical-align: middle;
+  padding: 8px 15px;
+  &:hover,
+  &:focus {
+    color: ;
+    border-color: ;
+    background-color: ;  
+  }
+    &:active {
+    color: ;
+    border-color: ;
+    background-color: ;
+    outline: none;
+  }
+
+
+
+
+
+  
+}
