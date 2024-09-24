@@ -1,12 +1,10 @@
 <template>
-  <span>test</span>
-  <Button type="warning">click</Button>
-  <Icon icon="angle-right"></Icon>
+	<Carousel height="150" :src-array="srcArr"></Carousel>
 </template>
-
 <script setup lang="ts">
-import Button from './components/Button/Button.vue'
-import Icon from './components/Icon/Icon.vue';
+import Carousel from "./components/Carousel/Carousel.vue"
+
+const srcArr = ['1','2','3']
 </script>
 
 <style scoped>

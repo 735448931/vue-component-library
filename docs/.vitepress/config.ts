@@ -6,7 +6,7 @@ import {
 } from "@vitepress-demo-preview/plugin"
 
 export default defineConfig({
-	title: "A Vue3 Component Library",
+	title: "Vue3 Component Library",
 	titleTemplate: "HaoXuan",
 	base: "/vue-component-library/",
 	description: "A VitePress Site",
@@ -37,6 +37,7 @@ export default defineConfig({
 					{ text: "Runtime API Examples", link: "/api-examples" },
 					{ text: "Icon 图标", link: "/icon" },
 					{ text: "Collapse", link: "/collapse" },
+					{ text: "Tooltip", link: "/tooltip" },
 				],
 			},
 			{
@@ -79,10 +80,10 @@ export default defineConfig({
 			message: "Released under the MIT License.",
 			copyright: "Copyright © 2024-present Hao Xuan",
 		},
-		 docFooter: {
-      prev: '上一页',
-      next: '下一页'
-    },
+		docFooter: {
+			prev: "上一页",
+			next: "下一页",
+		},
 		socialLinks: [
 			{
 				icon: "github",
