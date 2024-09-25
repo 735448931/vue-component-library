@@ -1,4 +1,4 @@
-export type ButtonType = "primary" | "success" | "warning" | "danger" | "info"
+export type ButtonType = "primary" | "success" | "warning" | "error"
 export type ButtonSize = "small" | "middle" | "large"
 
 export interface ButtonProps {

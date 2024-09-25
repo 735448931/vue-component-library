@@ -38,6 +38,8 @@ export default defineConfig({
 					{ text: "Icon 图标", link: "/icon" },
 					{ text: "Collapse", link: "/collapse" },
 					{ text: "Tooltip", link: "/tooltip" },
+					{ text: "Button", link: "/button" },
+					{ text: "Input", link: "/input" },
 				],
 			},
 			{

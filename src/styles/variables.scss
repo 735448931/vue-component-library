@@ -1,37 +1,43 @@
-$white:#fff;
-$black:#000;
+$white: #fff;
+$black: #000;
 
-$primary:#409eff;
-$success:#67c23a;
-$warning:#e6a23c;
-$error:#f56c6c;
+$primary: #409eff;
+$success: #67c23a;
+$warning: #e6a23c;
+$error: #f56c6c;
 
+$themes:(
+	primary:(
+		bg-color:$primary
+		bg-hover-color:$primary
+		font-color:$primary
+	),
+	success:(
+		bg-color:$success
+		bg-hover-color:$success
+		font-color:$success
+		
+	),
+	warning:(
+		bg-color:$warning
+		bg-hover-color:$warning
+		font-color:$warning
+		
+	),
+	error:(
+		bg-color:$error
+		bg-hover-color:$error
+		font-color:$error
+	)
+)
 
-$x-bg-color: #ffffff;
-$x-bg-color-page: #f2f3f5;
-$x-bg-color-overlay: #ffffff;
-$x-text-color-primary: #303133;
-$x-text-color-regular: #606266;
-$x-text-color-secondary: #909399;
-$x-text-color-placeholder: #a8abb2;
-$x-text-color-disabled: #c0c4cc;
-$x-border-color: #dcdfe6;
-$x-border-color-light: #e4e7ed;
-$x-border-color-lighter: #ebeef5;
-$x-border-color-extra-light: #f2f6fc;
-$x-border-color-dark: #d4d7de;
-$x-border-color-darker: #cdd0d6;
-$x-fill-color: #f0f2f5;
-$x-fill-color-light: #f5f7fa;
-$x-fill-color-lighter: #fafafa;
-$x-fill-color-extra-light: #fafcff;
-$x-fill-color-dark: #ebedf0;
-$x-fill-color-darker: #e6e8eb;
-$x-fill-color-blank: #ffffff;
+@each $name,$colors in $themes {
+	.x-button-#{$name} {
 
+		
+	}
+}
 
-
-// border
 
 
 
@@ -62,9 +68,9 @@ $x-fill-color-blank: #ffffff;
 
 
 // $baseType:(
-//   primary: $primary,  
-//   success: $success,  
-//   warning: $warning,  
+//   primary: $primary,
+//   success: $success,
+//   warning: $warning,
 //   error: $error
 // );
 
@@ -72,36 +78,10 @@ $x-fill-color-blank: #ffffff;
 //     background-color: $color;
 // }
 
-
-// @each $type, $color in $baseType {  
-//   .x-button-#{$type} {  
+// @each $type, $color in $baseType {
+//   .x-button-#{$type} {
 //    background-color: $color;
-//   }  
+//   }
 // }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 

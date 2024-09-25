@@ -32,22 +32,80 @@ $button-type:(
   border: none;
   vertical-align: middle;
   padding: 8px 15px;
-  // &:hover,
-  // &:focus {
-  //   color: ;
-  //   border-color: ;
-  //   background-color: ;  
-  // }
+  color: #fff;
+  // 两个按钮同时挨着的情况 
+    & + & {
+    margin-left: 12px;
+  }
+  border-radius: 4px;
+  &:hover,
+  &:focus {
+    color: #fff;
+    border-color: #555;
+    background-color: #999;  
+  }
+
+    [class*=x-icon] + span {
+    margin-left: 6px;
+  }
   //   &:active {
   //   color: ;
   //   border-color: ;
   //   background-color: ;
   //   outline: none;
   // }
+  &.is-round {
+    border-radius: 20px;
+  }
+
+    &.is-circle {
+    border-radius: 50%;
+    padding: 8px;
+  }
 
 
-
+  &.is-plain {
+    // --vk-button-hover-text-color: var(--vk-color-primary);
+    // --vk-button-hover-bg-color: var(--vk-fill-color-blank);
+    // --vk-button-hover-border-color: var(--vk-color-primary);    
+  }
 
 
   
 }
+
+
+
+
+
+
+
+
+
+
+
+// // 定义颜色映射  
+// $button-colors: (  
+//   primary: (#007bff, #0056b3), // 正常状态颜色, hover状态颜色  
+//   success: (#28a745, #218838),  
+//   warning: (#ffc107, #d39e00),  
+//   error: (#dc3545, #c82333)  
+// );  
+  
+// // 定义Sass混合  
+// @mixin button-style($type, $normal-color, $hover-color) {  
+//   &.btn-#{$type} {  
+//     background-color: $normal-color;  
+//     &:hover {  
+//       background-color: $hover-color;  
+//     }  
+//   }  
+// }  
+  
+// // 遍历颜色映射并应用混合  
+// @each $type, $colors in $button-colors {  
+//   .btn {  
+//     @include button-style($type, nth($colors, 1), nth($colors, 2));  
+//   }  
+// }  
+  
