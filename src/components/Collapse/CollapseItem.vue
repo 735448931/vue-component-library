@@ -1,13 +1,29 @@
 <template>
-	<div class="x-collapse-item">
+	<div
+		class="x-collapse-item"
+		:class="{
+			'is-disabled': disabled,
+		}"
+	>
 		<!-- 标题 -->
-		<div class="x-collapse-item__header" @click="handleClick">
+		<div
+			:class="{
+				'is-disabled': disabled,
+				'is-active': isActive,
+			}"
+			class="x-collapse-item__header"
+			:id="`item-header-${name}`"
+			@click="handleClick"
+		>
 			<slot name="title">{{ title }}</slot>
 		</div>
 		<!-- 折叠 -->
-		<Transition v-on="transitionEvents">
+		<Transition name="slide" v-on="transitionEvents">
 			<div class="x-collapse-item__wrapper" v-show="isActive">
-				<div class="x-collapse-item__content">
+				<div
+					class="x-collapse-item__content"
+					:id="`item-content-${name}`"
+				>
 					<slot></slot>
 				</div>
 			</div>
@@ -63,4 +79,48 @@ const transitionEvents: Record<string, (el: HTMLElement) => void> = {
 }
 </script>
 
-<style scoped></style>
+<style scoped>
+.x-collapse-item__header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 48px;
+	line-height: 48px;
+	background-color: #fff;
+	color: #303133;
+	cursor: pointer;
+	font-size: 13px;
+	font-weight: 500;
+	transition: border-bottom-color 0.3s;
+	outline: none;
+	border-bottom: 1px solid #e4e7ed;
+	&.is-disabled {
+		color: #a8abb2;
+		cursor: not-allowed;
+		background-image: none;
+	}
+	&.is-active {
+		border-bottom-color: transparent;
+		.header-angle {
+			transform: rotate(90deg);
+		}
+	}
+	.header-angle {
+		transition: transform 0.3s;
+	}
+}
+.x-collapse-item__content {
+	will-change: height;
+	background-color: #fff;
+	overflow: hidden;
+	box-sizing: border-box;
+	font-size: 13px;
+	color: #303133;
+	border-bottom: 1px solid #e4e7ed;
+	padding-bottom: 25px;
+}
+.slide-enter-active,
+.slide-leave-active {
+	transition: height 0.3s;
+}
+</style>

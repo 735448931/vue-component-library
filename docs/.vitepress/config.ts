@@ -40,43 +40,45 @@ export default defineConfig({
 					{ text: "Tooltip", link: "/tooltip" },
 					{ text: "Button", link: "/button" },
 					{ text: "Input", link: "/input" },
+					{ text: "Dropdown", link: "/dropdown" },
+					{ text: "Skeleton", link: "/skeleton" },
 				],
 			},
-			{
-				text: "表单组件",
-				items: [
-					{ text: "Icon 图标", link: "/icon" },
-					{ text: "Collapse", link: "/collapse" },
-				],
-			},
-			{
-				text: "Data 数据展示",
-				items: [
-					{ text: "Icon 图标", link: "/icon" },
-					{ text: "Collapse", link: "/collapse" },
-				],
-			},
-			{
-				text: "Navigation 导航",
-				items: [
-					{ text: "Icon 图标", link: "/icon" },
-					{ text: "Collapse", link: "/collapse" },
-				],
-			},
-			{
-				text: "Feedback 反馈组件",
-				items: [
-					{ text: "Icon 图标", link: "/icon" },
-					{ text: "Collapse", link: "/collapse" },
-				],
-			},
-			{
-				text: "其他组件",
-				items: [
-					{ text: "Icon 图标", link: "/icon" },
-					{ text: "Collapse", link: "/collapse" },
-				],
-			},
+			// {
+			// 	text: "表单组件",
+			// 	items: [
+			// 		{ text: "Icon 图标", link: "/icon" },
+			// 		{ text: "Collapse", link: "/collapse" },
+			// 	],
+			// },
+			// {
+			// 	text: "Data 数据展示",
+			// 	items: [
+			// 		{ text: "Icon 图标", link: "/icon" },
+			// 		{ text: "Collapse", link: "/collapse" },
+			// 	],
+			// },
+			// {
+			// 	text: "Navigation 导航",
+			// 	items: [
+			// 		{ text: "Icon 图标", link: "/icon" },
+			// 		{ text: "Collapse", link: "/collapse" },
+			// 	],
+			// },
+			// {
+			// 	text: "Feedback 反馈组件",
+			// 	items: [
+			// 		{ text: "Icon 图标", link: "/icon" },
+			// 		{ text: "Collapse", link: "/collapse" },
+			// 	],
+			// },
+			// {
+			// 	text: "其他组件",
+			// 	items: [
+			// 		{ text: "Icon 图标", link: "/icon" },
+			// 		{ text: "Collapse", link: "/collapse" },
+			// 	],
+			// },
 		],
 		footer: {
 			message: "Released under the MIT License.",

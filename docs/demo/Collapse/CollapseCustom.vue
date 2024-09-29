@@ -14,7 +14,8 @@
 	</Collapse>
 </template>
 
-<script setup>
+<script setup lang="ts">
+
 import { ref } from "vue"
 import Collapse from "@/components/Collapse/Collapse.vue"
 import Item from "@/components/Collapse/CollapseItem.vue"

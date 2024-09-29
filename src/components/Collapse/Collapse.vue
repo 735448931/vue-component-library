@@ -52,7 +52,7 @@ provide(collapseContextKey,{
 </script>
 
 <style scoped>
-.x-collapse {
-    
-}
+
+
+
 </style>
